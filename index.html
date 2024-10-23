@@ -18,8 +18,38 @@
 
     <!-- Bootstrap CSS / Color Scheme -->
     <link rel="stylesheet" href="css/default.css" id="theme-color">
+
+
+    <!-- Meta Pixel Code -->
+    <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'YOUR_PIXEL_ID'); 
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+<script>
+  fbq('track', 'Lead');
+</script>
+
+
+    
 </head>
 <body>
+
+
+
+
 
 <!--navigation-->
 <section class="smart-scroll">
@@ -65,7 +95,7 @@
                 <h1 class="heading-black text-capitalize">Click the button below and get instant access to my FREE step by step guide</h1>
                 <!-- <p class="lead py-3">Placeholder</p> -->
                  <br>
-                 <a class="btn btn-primary d-inline-flex flex-row align-items-center" href="https://discord.gg/74YANaU3WT" target="_blank">
+                 <a class="btn btn-primary d-inline-flex flex-row align-items-center" onclick="redirectToPage()" target="_blank">
                     I Want NOW!
                     <em class="ml-2" data-feather="arrow-right"></em>
                 </a>
@@ -77,11 +107,22 @@
     </div>
 </section>
 
-<!-- features section -->
+<script>
+  // Function to handle the button click and trigger an fbq event
+  function redirectToPage() {
+    // Track the button click with Meta Pixel
+    fbq('track', 'ButtonClick', {
+      buttonName: 'Go to Next Page',
+      destinationURL: 'https://discord.gg/74YANaU3WT'
+    });
 
-<!--pricing section-->
+    // Redirect after a small delay to ensure the event gets logged
+    setTimeout(function() {
+      window.location.href = 'https://destinationwebsite.com';
+    }, 200); // Adjust the delay time if needed
+  }
+</script>
 
-<!---->
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
