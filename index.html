@@ -132,11 +132,7 @@ src="https://www.facebook.com/tr?id=1586850858857721&ev=PageView&noscript=1"
   // Function to handle the button click and trigger an fbq event
   function redirectToPage() {
     // Track the button click with Meta Pixel
-  fbq('trackCustom', 'CustomLandingPage_DiscordButton'{
-      buttonName: 'Go to Next Page',
-      destinationURL: 'https://discord.gg/74YANaU3WT'
-    });
-
+  fbq('trackCustom', 'CustomLandingPage_DiscordButton');
     // Redirect after a small delay to ensure the event gets logged
     setTimeout(function() {
       window.location.href = 'https://discord.gg/74YANaU3WT';
