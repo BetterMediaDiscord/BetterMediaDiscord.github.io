@@ -31,7 +31,7 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1586850858857721');
-fbq('track', 'PageView');
+fbq('track', 'PageView-CustomLandingPage');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1586850858857721&ev=PageView&noscript=1"
@@ -44,8 +44,24 @@ src="https://www.facebook.com/tr?id=1586850858857721&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
     
 <script>
-  fbq('track', 'Lead');
+  // Function to detect if the user was referred from Instagram
+  function checkInstagramReferrer() {
+    // Get the referrer URL
+    var referrer = document.referrer;
+
+    // Check if the referrer URL contains "instagram.com"
+    if (referrer && referrer.indexOf("instagram.com") !== -1) {
+      // User came from Instagram, so track the event using Meta Pixel
+      fbq('track', 'InstagramReferral', {
+        referrer: referrer // You can pass the referrer URL as event data
+      });
+    }
+  }
+
+  // Call the function when the page loads
+  window.onload = checkInstagramReferrer;
 </script>
+
 
 
     
@@ -121,7 +137,7 @@ src="https://www.facebook.com/tr?id=1586850858857721&ev=PageView&noscript=1"
     // Redirect after a small delay to ensure the event gets logged
     setTimeout(function() {
       window.location.href = 'https://discord.gg/74YANaU3WT';
-    }, 250); // Adjust the delay time if needed
+    }, 300); // Adjust the delay time if needed
   }
 </script>
 
