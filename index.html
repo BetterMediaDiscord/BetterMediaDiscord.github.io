@@ -32,6 +32,19 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1586850858857721');
 fbq('track', 'PageView-CustomLandingPage');
+
+  // Function to handle the button click and trigger an fbq event
+function redirectToPage() {
+    // Track the button click with Meta Pixel
+  fbq('track', 'CustomLandingPageDiscordButton');
+    // Redirect after a small delay to ensure the event gets logged
+    setTimeout(function() {
+      window.location.href = 'https://discord.gg/74YANaU3WT';
+    }, 500); // Adjust the delay time if needed
+  }
+
+
+    
 </script>
     
 <noscript><img height="1" width="1" style="display:none"
@@ -128,19 +141,6 @@ src="https://www.facebook.com/tr?id=1586850858857721&ev=PageView&noscript=1"
         </div>
     </div>
 </section>
-
-<script>
-  // Function to handle the button click and trigger an fbq event
-  function redirectToPage() {
-    // Track the button click with Meta Pixel
-  fbq('track', 'CustomLandingPageDiscordButton');
-    // Redirect after a small delay to ensure the event gets logged
-    setTimeout(function() {
-      window.location.href = 'https://discord.gg/74YANaU3WT';
-    }, 500); // Adjust the delay time if needed
-  }
-</script>
-
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
