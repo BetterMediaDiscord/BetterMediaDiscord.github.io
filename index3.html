@@ -1,0 +1,155 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Better Media</title>
+    <meta name="description"
+          content="Join the Better Media discord server today!"/>
+
+    <!--Inter UI font-->
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+
+    <!--vendors styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- Bootstrap CSS / Color Scheme -->
+    <link rel="stylesheet" href="css/default.css" id="theme-color">
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1586850858857721');
+fbq('track', 'PageView-CustomLandingPage');
+
+  // Function to handle the button click and trigger an fbq event
+function redirectToPage() {
+    // Track the button click with Meta Pixel
+  fbq('track', 'CLPDiscordButton');
+    // Redirect after a small delay to ensure the event gets logged
+    setTimeout(function() {
+      window.location.href = 'https://discord.gg/74YANaU3WT';
+    }, 1000); // Adjust the delay time if needed
+  }
+
+
+    
+</script>
+    
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1586850858857721&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1586850858857721&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+<script>
+  // Function to detect if the user was referred from Instagram
+  function checkInstagramReferrer() {
+    // Get the referrer URL
+    var referrer = document.referrer;
+
+    // Check if the referrer URL contains "instagram.com"
+    if (referrer && referrer.indexOf("instagram.com") !== -1) {
+      // User came from Instagram, so track the event using Meta Pixel
+      fbq('track', 'InstagramReferral', {
+        referrer: referrer // You can pass the referrer URL as event data
+      });
+    }
+  }
+
+  // Call the function when the page loads
+  window.onload = checkInstagramReferrer;
+</script>
+
+
+
+    
+</head>
+<body>
+
+
+
+
+
+<!--navigation-->
+<section class="smart-scroll">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand heading-black" href="index.html">
+                Better Media
+            </a>
+            
+            <!-- 
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="#">
+                            <em data-feather="layout" width="18" height="18" class="mr-2"></em>
+                            Try Generator
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            -->
+        </nav>
+    </div>
+</section>
+
+<!--hero header-->
+<section class="py-7 py-md-0 bg-hero" id="home">
+    <div class="container">
+        <div class="row vh-md-100">
+            <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
+                <h1 class="heading-black text-capitalize">Join FREE Discord For Step By Step Guide! ↓</h1>
+                <!-- <p class="lead py-3">Placeholder</p> -->
+                 <br>
+                 <a class="btn btn-primary d-inline-flex flex-row align-items-center" onclick="redirectToPage()" target="_blank">
+                    I Want NOW!
+                    <em class="ml-2" data-feather="arrow-right"></em>
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
