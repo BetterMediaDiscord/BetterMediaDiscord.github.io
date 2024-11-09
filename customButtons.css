@@ -9,10 +9,10 @@
   --fancy-button-shine-top: #e9d1ff;
   --fancy-button-shine-bottom: #adfff9;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px; /* Increased font size */
   line-height: 21px;
   text-shadow: 0px 0.5px 0.5px rgba(0, 0, 0, 0.2);
-  padding: 5px;
+  padding: 8px; /* Added padding around the button */
   margin: 0;
   appearance: none;
   border: none;
@@ -21,7 +21,7 @@
   position: relative;
   cursor: pointer;
   z-index: 1;
-  border-radius: 25px;
+  border-radius: 30px; /* Increased border radius for a more rounded look */
   color: #fff;
   background-image: linear-gradient(
     to bottom,
@@ -68,7 +68,7 @@
 
 .btn-chris1 span {
   display: block;
-  padding: 24px 48px;
+  padding: 20px 40px; /* Increased padding inside the button */
   border-radius: inherit;
   overflow: hidden;
   position: relative;
@@ -114,9 +114,6 @@
 
 .btn-chris1:hover span:before {
   opacity: 0.8;
-}
-
-.btn-chris1:hover span:before {
   transform: translateX(-50%) scale(1.25);
 }
 
