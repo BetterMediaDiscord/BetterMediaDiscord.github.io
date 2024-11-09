@@ -9,7 +9,7 @@
   --fancy-button-shine-top: #e9d1ff;
   --fancy-button-shine-bottom: #adfff9;
   font-weight: 500;
-  font-size: 18px; /* Increased font size */
+  font-size: 16px; /* Increased font size */
   line-height: 21px;
   text-shadow: 0px 0.5px 0.5px rgba(0, 0, 0, 0.2);
   padding: 8px; /* Added padding around the button */
